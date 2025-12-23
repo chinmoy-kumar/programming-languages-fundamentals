@@ -28,7 +28,6 @@ def a_lot(num1, num2):
     remain = num1 - num2
     # return [sum, mult, remain]
     return sum, mult, remain
-print (int input ())
 
 
 everything = a_lot(55, 21)
