@@ -12,3 +12,8 @@ bread_int = int(bread)
 butter_int = int(butter)
 total = bread_int + butter_int
 print("Total price is: ", total) 
+
+# If the input given with space seperated
+# input: 19 21 32
+a, b, c = (input().split())
+print(a, b, c)

@@ -29,3 +29,13 @@ print()
 # enumerate(iterable, start=0):
 for index, value in enumerate(friends, start = 0):
     print(index, value)
+
+# Using _
+""" 
+It means:
+“I don’t need the loop variable, I just want to repeat the loop.”
+So _ is just a variable name, but by convention it tells readers:
+This value is intentionally unused.
+"""
+for _ in range(5):
+    print("Hello")
