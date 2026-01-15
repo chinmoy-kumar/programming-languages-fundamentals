@@ -1,4 +1,6 @@
 # list, array, collection is same (simple terms)
+# list is mutable (can be modified)
+# Defined using parentheses '()'
 
 # index =   0   1   2   3   4  5   6   7   8   9  
 numbers = [45, 56, 12, 89, 87, 32, 84, 59, 46, 93]
