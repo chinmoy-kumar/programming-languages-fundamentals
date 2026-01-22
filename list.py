@@ -25,3 +25,13 @@ print(numbers[:5]) # By default it will start printing from index 0
 
 print(numbers[:]) # shortcut to copy a list
 print(numbers[::-1]) #shortcut to reverse a list
+
+# loop
+print('\nloop in list')
+for item in numbers:
+    print(item)
+
+# loop with index
+print("\nloop with index")
+for i, value in enumerate(numbers):
+    print(i, value) 
