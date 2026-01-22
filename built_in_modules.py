@@ -1,6 +1,6 @@
 # Ref. -> https://docs.python.org/3/py-modindex.html
 # Modules are the collection of related functions
-# For using modules import them at first
+# For using built-in modules import them at first
 from math import *
 from random import *
 from time import sleep
