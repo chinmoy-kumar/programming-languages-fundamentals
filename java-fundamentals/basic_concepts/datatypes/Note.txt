@@ -1,0 +1,5 @@
+**Primitive datatypes** are the basic, built-in types in a programming language, like `int`, `char`, `float`, and `boolean`, which store simple values directly. 
+
+**Non-primitive datatypes** (also known as reference types) are more complex types like objects, arrays, and strings, which store references to memory locations rather than the actual data. 
+
+Primitive types are predefined by the language, while non-primitive types are created by the programmer.
