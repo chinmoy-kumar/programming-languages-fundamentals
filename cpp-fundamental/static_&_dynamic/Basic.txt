@@ -1,0 +1,9 @@
+Static variable or array stores data in "Static Memory".
+Dynamic Variable or array stores data is "Heap Memory".
+
+Main Difference:
+    Static memory cannot be changed after declaration.
+    Static memory get automatically deleted after function return.
+
+    Heap memory can be changed after declaration.
+    Heap memory don't get automatically deleted after function return.
