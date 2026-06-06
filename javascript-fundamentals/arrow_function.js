@@ -9,7 +9,7 @@ const functionName = (parameter) =>
 
 // Unnamed function
 // ------------------
-// () => {// code goes here};
+// (parameter) => {// code goes here};
 
 /* const calculateTotal = (price, quantity) => 
 {
