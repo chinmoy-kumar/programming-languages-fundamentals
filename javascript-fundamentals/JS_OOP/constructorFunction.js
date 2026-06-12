@@ -1,5 +1,6 @@
 // constructor
 // -------------
+// In javascript, constructor can be created & called without a class.
 function Person(name, age)
 {
     this.name = name;

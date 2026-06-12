@@ -39,3 +39,33 @@ console.log(Object.getPrototypeOf(tesla));
 // Check if a object owns a property or it comes from the prototype
 console.log(tesla.hasOwnProperty('driver')); // true, because it's tesla's property
 console.log(tesla.hasOwnProperty('tyre')); // false, because it's car's property
+
+// Object.create()
+// ----------------
+// Use Object.setPrototypeOf() only if you absolutely must change the prototype of an object that already exists and already has properties attached to it that you don't want to lose.
+// Use Object.create() if you are setting up your prototype chain early on and don't mind overriding the current prototype object.
+// 1. Create our "blueprint" object
+const animalBlueprint = {
+  type: "Unknown",
+  makeSound: function() {
+    console.log(`${this.name} says hello!`);
+  }
+};
+
+// 2. Use Object.create() to stamp out a new object based on the blueprint
+const myDog = Object.create(animalBlueprint);
+
+// At this point, myDog is actually an EMPTY object {} 
+// but it is secretly linked to animalBlueprint.
+console.log(myDog); // Output: {}
+
+// Check if animalBlueprint is the prototype of myDog
+console.log(Object.getPrototypeOf(myDog) === animalBlueprint);
+
+// 3. Add properties unique to this specific dog
+myDog.name = "Buddy";
+myDog.type = "Dog"; // Overrides the blueprint's "Unknown" type
+
+// 4. Test it out!
+myDog.makeSound(); // Output: "Buddy says hello!"
+console.log(myDog.type); // Output: "Dog"
