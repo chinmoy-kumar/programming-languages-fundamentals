@@ -39,3 +39,23 @@ document.getElementById('changeOrder').addEventListener('click', function () {
     coffee.style.padding = "10px";
 
 })
+
+// Example-04
+// -----------
+document.getElementById('addNewItem').addEventListener('click', function () {
+    let newItem = document.createElement('li');
+    newItem.textContent = "Banana";
+    document.getElementById('shoppingList').appendChild(newItem);
+})
+
+// Example-05
+// -----------
+document.getElementById('removeLastTask').addEventListener('click', function () {
+    let taskList = document.getElementById('taskList');
+
+    // removes whole task list
+    // taskList.remove();
+
+    // removes the last element
+    taskList.lastElementChild.remove();
+})
