@@ -59,3 +59,4 @@ document.getElementById('removeLastTask').addEventListener('click', function () 
     // removes the last element
     taskList.lastElementChild.remove();
 })
+
