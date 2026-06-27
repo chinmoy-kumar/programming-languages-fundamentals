@@ -1,7 +1,13 @@
+// Ref. video: https://www.youtube.com/watch?v=AOPmqw9scfc
+
 // Prototype:
 // an object can use properties/methods from another object.
 // Think of it like inheritance or sharing.
 // Prototype is JavaScript’s way of sharing properties and methods between objects.
+
+// __proto__ -> for objects
+// prototype -> for base classes
+// objects __proto__ points towards base class's prototype.
 
 let Macbook = {
     cpu: "M1 Chip",
