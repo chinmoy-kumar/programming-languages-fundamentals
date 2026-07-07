@@ -7,10 +7,10 @@
 =============
 let myPromise = new Promise(function(resolve, reject) {
 
-// Code that may take some time
+    // Code that may take some time
 
-  resolve(value); // when successful
-  reject(value);  // when error
+    resolve(value); // when successful
+    reject(value);  // when error
 });
 
  */

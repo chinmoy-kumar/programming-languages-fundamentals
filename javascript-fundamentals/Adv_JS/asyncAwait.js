@@ -4,7 +4,8 @@ function fetchUserData()
 {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            reject({name: "chinmoy", url: "www.chinmoykumar.com"});
+            resolve({name: "chinmoy", url: "www.chinmoykumar.com"});
+            // reject("Server Error"); 
         }, 3000);
     });
 }
@@ -20,7 +21,7 @@ async function getUserData()
         
     }
     catch(error){
-        console.error("Error fetching data", error);
+        console.error("Error fetching data: ", error);
     }
 }
 
