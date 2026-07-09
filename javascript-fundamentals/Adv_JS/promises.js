@@ -1,4 +1,6 @@
-// A Promise acts as a placeholder for a value that will be available at some point in the future, allowing you to handle asynchronous code in a cleaner way than traditional callbacks.
+// A Promise acts as a placeholder for a value that will be available at some point in the future, allowing you to handle asynchronous code in a cleaner way than traditional callbacks & also used to avoid callback hell.
+
+// Promise is an Object in JS. It has 3 state -> Fullfilled, Pending, Rejected.
 
 // A promise is considered settled if it is fulfilled or rejected (not pending).
 
