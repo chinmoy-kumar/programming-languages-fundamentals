@@ -1,4 +1,7 @@
+// Async function always returns a promise.
 
+// Structure
+// async function myFunc(){...}
 
 function fetchUserData()
 {
@@ -10,11 +13,12 @@ function fetchUserData()
     });
 }
 
+// 'await' pauses the execution of it's surrounding async function until the promise is settled.
+// 'await' can only be used where there is the `async` keyword over the function.
 async function getUserData()
 {
     try{
         console.log(`Fetching data...`);
-        // 'await' can only be used where there is the `async` keyword over the function.
         const userData = await fetchUserData();
         console.log("User data fetched successfully");
         console.log("User data: ", userData)
