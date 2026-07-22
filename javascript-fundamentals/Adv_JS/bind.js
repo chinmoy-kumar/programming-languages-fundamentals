@@ -13,4 +13,4 @@ person.greet();
 
 // For this reason we use 'Bind'. To add the context through bind.
 const boundGreet = person.greet.bind({name: "Tirtho "}); // 
-boundGreet();
+boundGreet();   
