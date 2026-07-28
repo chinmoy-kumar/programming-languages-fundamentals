@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer components{
+    .todo-item{
+        @apply bg-[#333333] flex justify-between px-3 py-2 rounded-sm text-sm w-[95%] text-white;
+    }
+
+    .todo-item.completed .task-text{
+        text-decoration: line-through;
+        opacity: 70%;
+    }
+
+    .delete-btn{
+            @apply cursor-pointer rounded-md bg-red-700 px-2 py-1
+           text-xs text-white transition-colors duration-300
+           hover:bg-red-800;
+    }
+    
+}

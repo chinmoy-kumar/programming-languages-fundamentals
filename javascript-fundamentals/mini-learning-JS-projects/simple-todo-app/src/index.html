@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold">
+    <div id="mainContainer" class="bg-[#121212] min-h-screen flex justify-center items-center w-full">
+        <div id="container" class="min-h-auto w-md bg-[#1e1e1e] flex flex-col p-5 rounded-xl">
+            <h1 class="text-xl text-white font-bold m-auto mb-2">TO-DO List</h1>
+            <div id="input-container" class="flex justify-center">
+                <input type="text" id="todo-input" placeholder="Add a new task..." class="bg-[#333333] px-3 py-2 rounded-sm placeholder:text-gray-500 text-sm w-[70%] outline-none focus:border-indigo-400 focus:border-2 border-2 border-transparent text-white">
+                <button id="add-task-btn" class="bg-indigo-700 cursor-pointer text-sm text-white px-3 py-2 rounded-sm font-normal ml-3 hover:bg-indigo-600 transition duration-300">Add Task</button>
+            </div>
+            <ul id="todo-list" class="flex flex-col gap-2 mt-3 justify-center items-center w-full">
+                <!-- <li class="bg-[#333333] px-3 py-2 rounded-sm text-sm w-[95%] text-white">test</li> -->
+                 <!-- <li class="todo-item completed task-text">
+                    <span class="task-text">test2</span>
+                     <button class="delete-btn">delete btn</button>
+                 </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </h1>
+</body>
+</html>
