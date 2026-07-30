@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             text: taskText,
             isCompleted: false,
         }
+        
         // push newTask to that tasks array
         tasks.push(newTask);
         // save data in local storage
