@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.onBtn{
+    background-color: #038731;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 12px 40px;
+    width:200px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.onBtn:hover{
+    background-color: #026522;
+}
+
+.offBtn{
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 12px 40px;
+    cursor: pointer; 
+    width:200px;
+    box-sizing: border-box;
+}
+
+.offBtn:hover{
+    background-color: rgb(99, 18, 18);
+}
