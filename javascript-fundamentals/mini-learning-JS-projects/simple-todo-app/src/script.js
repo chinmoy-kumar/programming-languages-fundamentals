@@ -28,13 +28,33 @@ document.addEventListener('DOMContentLoaded', () => {
         saveData();
         // clear input field
         todoInput.value = "";
-        console.log(tasks);
+        renderTask(newTask);
     })
 
     // display tasks
     function renderTask(tsk)
     {
-        console.log(tsk);
+        const li = document.createElement('li');
+        if(tsk.isCompleted === true) li.classList.add('completed', 'task-text');
+        li.setAttribute('data-id', tsk.id);
+        li.innerHTML = `
+            <span class="task-text">${tsk.text}</span>
+            <button class="delete-btn">Delete</button>
+        `
+        todoList.appendChild(li);
+        li.classList.add("todo-item");
+
+        // mark as completed
+        li.addEventListener('click', (e)=>{
+            // if clicked on delete button only
+            if(e.target.tagName === 'BUTTON'){
+                return;        
+            }
+            tsk.isCompleted = !tsk.isCompleted;
+            li.classList.toggle('completed')
+            saveData();
+
+        })
     }
 
     // function to save value in browser local storage
