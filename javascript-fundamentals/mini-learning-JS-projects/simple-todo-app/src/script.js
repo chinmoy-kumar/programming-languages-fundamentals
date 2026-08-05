@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // load data from local storage (if any)
     // JSON.parse convert back to the previous form of that object that previously converted using JSON.stringify()
-    const tasks = JSON.parse(localStorage.getItem('storeTask')) || [];
+    let tasks = JSON.parse(localStorage.getItem('storeTask')) || [];
 
     tasks.forEach(tsk => renderTask(tsk));
 
@@ -54,6 +54,20 @@ document.addEventListener('DOMContentLoaded', () => {
             li.classList.toggle('completed')
             saveData();
 
+        })
+
+        // delete task from list
+        li.querySelector('button').addEventListener('click', (e) => {
+            // stop to propagate further
+            e.stopPropagation();
+
+            // filter out that specific task
+            // filter method only returns the true values.
+            // t iterates through each obj in tasks.
+            tasks = tasks.filter(t => t.id !== tsk.id);
+            // removes that matched li
+            li.remove();
+            saveData();
         })
     }
 
