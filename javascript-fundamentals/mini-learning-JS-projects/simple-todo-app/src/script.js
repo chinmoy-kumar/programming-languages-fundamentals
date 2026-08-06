@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTask(newTask);
     })
 
+    todoInput.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter') addTaskBtn.click();
+    })
+
     // display tasks
     function renderTask(tsk)
     {
@@ -47,13 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // mark as completed
         li.addEventListener('click', (e)=>{
             // if clicked on delete button only
+            // tagName always in capital letters
             if(e.target.tagName === 'BUTTON'){
                 return;        
             }
             tsk.isCompleted = !tsk.isCompleted;
             li.classList.toggle('completed')
             saveData();
-
         })
 
         // delete task from list
