@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTask(newTask);
     })
 
+    // keydown is a keyboard event. It runs when the user presses a key down while the input field is focused.
     todoInput.addEventListener('keydown', (e) => {
         if(e.key === 'Enter') addTaskBtn.click();
     })
