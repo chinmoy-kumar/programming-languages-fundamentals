@@ -1,5 +1,5 @@
 // Spread operator (...)
-// ... allows an iterable such as an array or string to be expended into seperate elements (unpacks the elements)
+// ... allows an iterable such as an array or string to be expended into separate elements (unpacks the elements)
 
 // with numbers
 // --------------
@@ -32,6 +32,26 @@ console.log(groceryList);
 let foods = [...fruits, ...groceryList, "eggs", "nuts"];
 console.log(foods);
 
+// with object
+// ------------
+// let newObj = {...oldObj}
+const personalInfo = {
+    name: "Callie", 
+    age: 22,
+}
+
+const contactInfo = {
+    email: "callie@gmail.com",
+    phone: "01733377711"
+}
+
+const fullProfile = {
+    ...personalInfo, // spread personalInfo
+    ...contactInfo,  // spread contactInfo
+    zipCode: 1200,   // added extra info
+}
+
+console.log(fullProfile);
 
 
 
