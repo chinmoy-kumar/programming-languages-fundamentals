@@ -36,7 +36,7 @@ let BDcityPopulation = {
     "Bogura city": 5000000, // if key contain space keep it inside of quotation
 }
 
-let BDlargeCities = {}
+let BDlargeCities = {};
 
 // There is not sequence of pointing cities from BDcityPopulation object
 for(const city in BDcityPopulation)
