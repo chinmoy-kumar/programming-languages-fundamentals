@@ -1,0 +1,2 @@
+# What is Reconciliation or react reconciler?
+=> React first creates a virtual dom and after changing a state it creates another virtual dom, after that it compare and checks two virtual dom and find out where the change happens. This process called Reconciliation.
