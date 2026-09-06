@@ -1,3 +1,4 @@
+// Example-01
 function Person(name)
 {
     this.name = name;
@@ -9,3 +10,5 @@ Person.prototype.greet = function() {
 
 const p1 = new Person("Chinmoy");
 p1.greet();
+
+// Example-02

@@ -33,7 +33,7 @@ async function getBlogData() {
         console.log(commentData);
         console.log("Data1 fetching complete.\n")
     }
-    catch (err) {
+    catch (err) { // if any of those promise got rejected then catch part runs
         console.error("No", err);
     }
     

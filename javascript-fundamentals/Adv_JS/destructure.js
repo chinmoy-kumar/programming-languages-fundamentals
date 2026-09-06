@@ -1,3 +1,9 @@
+// Destructure: Unpack values into variables from object or array.
+
+// Difference between Spread and Destructure
+// Spread -> Expand values into another structure
+// Destructure -> Unpack values into variables from object or array.
+
 const student1 = {
     name: "Emilie",
     age: 21,

@@ -1,5 +1,5 @@
 // rest parameters:
-// (...rest) allow a function work with a variable number of arguments by bundiling them into an array
+// (...rest) allow a function work with a variable number of arguments by bundling them into an array
 
 // Difference between Spread and Rest:
 // spread -> expands or unpacks an array into separate elements.
@@ -7,10 +7,10 @@
 
 // Example-01
 // -----------
-function openFridge(...foods) // rest perameter
+function openFridge(...foods) // rest parameter
 {
     console.log(foods);
-    console.log(...foods); // spread operator (seperates each elements)
+    console.log(...foods); // spread operator (separates each elements)
 }
 
 const food1 = "pizza";

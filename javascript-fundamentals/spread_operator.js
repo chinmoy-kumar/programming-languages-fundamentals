@@ -1,6 +1,10 @@
 // Spread operator (...)
 // ... allows an iterable such as an array or string to be expended into separate elements (unpacks the elements)
 
+// Difference between Spread and Destructure
+// Spread -> Expand values into another structure
+// Destructure -> Unpack values into variables from object or array.
+
 // with numbers
 // --------------
 const numbers = [2, 4, 5, 1, 3]
