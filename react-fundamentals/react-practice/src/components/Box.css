@@ -1,0 +1,13 @@
+.box{
+    background-color: aqua;
+    padding:10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.warning{
+    background-color: tomato;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+}
