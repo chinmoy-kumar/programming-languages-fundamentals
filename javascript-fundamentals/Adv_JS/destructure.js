@@ -63,7 +63,7 @@ const student3 = {
 const {
     name: std3Name,
     address: { city: cityName },
-    hobbies: [, secondHobby, ]
+    hobbies: [, secondHobby,]
 } = student3;
 
 console.log(std3Name, secondHobby, cityName);
