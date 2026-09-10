@@ -1,6 +1,6 @@
 import "./Box.css"; // connect a css file
 
-//* using if
+//> using if
 /* 
 export default function Box({name, age})
 {
@@ -17,7 +17,7 @@ export default function Box({name, age})
 } 
 */
 
-//* using alternative way: short-circuit evaluation
+//> using alternative way: short-circuit evaluation
 /* export default function Box({ name, age }) {
   return (
     //NOTE: if the left slide condition of && operator is truthy, only then it will run the right slide of && operator.
@@ -37,7 +37,7 @@ export default function Box({name, age})
   );
 } */
 
-//* using ternary operator
+//> using ternary operator
 export default function Box({ name, age }) {
   return (
     <>

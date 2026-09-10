@@ -1,9 +1,9 @@
 // Note:
-//- Props and children
-//- Every component by default contains props
-//- children is a special, built-in prop that allows you to pass components, HTML elements, or plain text as nested content between the opening and closing tags of another component
+// Props and children
+// Every component by default contains props
+// children is a special, built-in prop that allows you to pass components, HTML elements, or plain text as nested content between the opening and closing tags of another component
 
-//* using props object
+//> using props object
 /* export default function Card(props) {
   // console.log(props); // check in console in browser 
   return <>
@@ -14,7 +14,7 @@
   </>;
 } */
 
-//* using props object destructing
+//> using props object destructing
 /* 
 export default function Card({ firstName, lastName, age }) {
   return (
@@ -27,7 +27,7 @@ export default function Card({ firstName, lastName, age }) {
 }
 */
 
-//* uisng children and props object destructing
+//> uisng children and props object destructing
 export default function Card({ children, firstName, lastName, age }) {
   return (
     <>
