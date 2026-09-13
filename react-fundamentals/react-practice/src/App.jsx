@@ -17,7 +17,7 @@ export default function App() {
 
   function handleSubmit(e)
   {
-    e.preventDefault();
+    e.preventDefault(); //* Prevents the auto reload after click the submit button
     alert(`user name is: ${name}`);
   }
   
