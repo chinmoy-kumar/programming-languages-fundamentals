@@ -33,17 +33,17 @@ export function Box2({ name, age })
 {
     //* useState returns an array. which we have destructured.
     //* useState returns 2 things in an array form. First one is a variable and second one is a function.
-    //* Use base of differnt data types as parameters of useState() like for string "", for number 0 etc
+    //* Use base of different data types as parameters of useState() like for string "", for number 0 etc
     const [member, setMember] = useState("");
 
-    function clickHandeler(name)
+    function clickHandler(name)
     {
         setMember(name);
     }
     // console.log(member)
 
     return(
-        <div onClick={() => clickHandeler(name)} className="box">
+        <div onClick={() => clickHandler(name)} className="box">
             <p>Name: {name}</p>
             <p>Age: {age}</p>
             {member && <p>Hey, {member}!</p>}
