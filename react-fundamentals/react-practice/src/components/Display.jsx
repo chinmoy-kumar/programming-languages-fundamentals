@@ -1,9 +1,13 @@
 import "./Box.css"
+import NestedDisplay  from "./NestedDisplay";
 
-function Display({ count }) {
+function Display() {
   return (
     <div className="box-orange">
-        <h1>{count}</h1>
+        <h3>Child component</h3>
+        <div>
+          <NestedDisplay></NestedDisplay>
+        </div>
     </div>
   )
 }

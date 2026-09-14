@@ -1,6 +1,10 @@
+import { use } from "react";
 import "./Box.css";
+import { CounterContext } from "../providers/counter.provider";
 
-export function Counter({ count, setCount }) {
+export function Counter() {
+  const {count, setCount} = use(CounterContext);
+
   function increaseCounter() {
     setCount(count + 1);
   }

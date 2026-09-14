@@ -20,6 +20,22 @@
     margin-bottom: 10px;
 }
 
+.box-tomato{
+    background-color: tomato;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.box-brown{
+    background-color: brown;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 .btn{
     padding: 10px 20px;
     margin-left: 5px;
