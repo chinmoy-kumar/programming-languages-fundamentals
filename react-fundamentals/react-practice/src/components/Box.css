@@ -1,14 +1,28 @@
-.box{
+.box {
     background-color: aqua;
-    padding:10px;
+    padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.warning{
+.warning {
     background-color: tomato;
-    color:white;
+    color: white;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.box-orange {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
 }
