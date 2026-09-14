@@ -1,18 +1,20 @@
-import { Counter } from "./Counter.jsx";
-import Display from "./Display.jsx";
-import CounterProvider from "../providers/counter.provider.jsx";
-import "./Box.css";
+import { useEffect, useState } from "react";
 
 function App() {
+    const [count, setCount] = useState(0);
+    const [anotherCount, setAnotherCount] = useState(0);
+    
+    useEffect(() => {
+        console.log("useEffect func triggered");
+    }, [anotherCount]) //* dependency array has 'anotherCount'. So the useEffect function will only trigger while the 'anotherCount' changes
+
   return (
-    <CounterProvider>
-      <div className="box-tomato">
-        <h3>Parent component</h3>
-        <Counter/>
-        <Display/>
-      </div>
-    </CounterProvider>
-  );
+    <div>
+        <button onClick={() => setCount(count+1)}>Increment {count}</button>
+        <button onClick={() => setAnotherCount(anotherCount+1)}>Another Increment {anotherCount}</button>
+    </div>
+  )
 }
 
-export default App;
+
+export default App
