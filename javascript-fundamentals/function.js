@@ -1,5 +1,6 @@
 //> Function sturcture
 //- Function declaration
+//* This functions can be used before declared
 // function functionName(parameter)
 // {
 //     // codes goes here
@@ -7,6 +8,7 @@
 // } 
 
 //- Function expression
+//* Essentially function value stored in a value
 // const variableName = function(parameter)
 // {
 //     // code goes here
