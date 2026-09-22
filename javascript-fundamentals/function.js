@@ -1,13 +1,20 @@
-/* Function sturcture
------------------------ 
-function functionName(parameter)
-{
-    // codes goes here
-    return returnValue;
-} 
-*/
+//> Function sturcture
+//- Function declaration
+// function functionName(parameter)
+// {
+//     // codes goes here
+//     return returnValue;
+// } 
 
-// General function
+//- Function expression
+// const variableName = function(parameter)
+// {
+//     // code goes here
+//     return returnValue;
+// }
+
+
+//> General function
 function greeting(name)
 {
     let greet = `Welcome, ${name}!`;
@@ -16,7 +23,7 @@ function greeting(name)
 let getGreeting = greeting("Robert");
 console.log(getGreeting); 
 
-// Nested function
+//> Nested function
 function orderTea(teaType)
 {
     function confirmOrder(tea)
@@ -28,9 +35,8 @@ function orderTea(teaType)
 let orderStatus = orderTea("Masala tea")
 console.log(orderStatus);
 
-// Higher-order function
-// -----------------------
-// Higher-order function is a function that either takes one or more functions as arguments, returns a function as its result, or both
+//> Higher-order function
+//- Higher-order function is a function that either takes one or more functions as arguments, returns a function as its result, or both
 
 function makeTea(typeOfTea)
 {
@@ -45,8 +51,8 @@ function processTeaOrder(tea) // here tea is a function perameter
 let order = processTeaOrder(makeTea); // makeTea is function argument
 console.log(order);
 
-// Factory function & Closures
-// In JavaScript, a factory function is a function that returns an object. Functions are also kind of object in JS.
+//> Factory function & Closures
+//- In JavaScript, a factory function is a function that returns an object. Functions are also kind of object in JS.
 
 function createTeaOrder(name)
 {
