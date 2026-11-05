@@ -54,7 +54,7 @@ const car: Car = {
 
 //> duplicate in interface & type
 
-//- Interface with same name got merged automatically
+//NOTE: Interface with same name got merged automatically
 interface IEmployee {
     name: string;
 }
