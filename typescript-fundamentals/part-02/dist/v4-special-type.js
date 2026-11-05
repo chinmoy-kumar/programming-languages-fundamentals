@@ -35,6 +35,6 @@ console.log(greetings);
 const getError = (msg) => {
     throw new Error(msg);
 };
-//NOTE: 'never' can be assigned in any type
-const newMsg = getError("Abc");
 export {};
+//NOTE: 'never' can be assigned in any type
+// const newMsg: string = getError("Abc");

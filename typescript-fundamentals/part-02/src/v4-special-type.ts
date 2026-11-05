@@ -62,4 +62,4 @@ const getError = (msg: string): never => {
 };
 
 //NOTE: 'never' can be assigned in any type
-const newMsg: string = getError("Abc");
+// const newMsg: string = getError("Abc");
