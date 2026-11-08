@@ -4,15 +4,15 @@ let BDcityPopulation = {
     Bogura: 3000000,
     Rangpur: 2000000,
     "Bogura city": 5000000, // if key contain space keep it inside of quotation
-}
+};
 
-let UScityPoputlaiton = {} // empty object
+let UScityPoputlaiton = {}; // empty object
 
 //> Add properties
 BDcityPopulation.khulna = "60000000";
-BDcityPopulation["Chittagong"] = "900000000"
+BDcityPopulation["Chittagong"] = "900000000";
 
-console.log(BDcityPopulation)
+console.log(BDcityPopulation);
 
 //> Access object properties
 //- Dot notation
@@ -21,21 +21,14 @@ console.log(Object.keys(BDcityPopulation)); // print all keys
 console.log(Object.values(BDcityPopulation)); // print all values
 
 //- Bracket notation
-console.log(BDcityPopulation['Bogura'])
+console.log(BDcityPopulation["Bogura"]);
 
 let user = {
     firstName: "Hulda",
     lastName: "Gill",
-    age: 67
-}
+    age: 67,
+};
 
 const name = "Name";
-console.log(user['first' + name]);
-console.log(user['last' + name]);
-
-
-
-
-
-
-
+console.log(user["first" + name]);
+console.log(user["last" + name]);

@@ -1,5 +1,4 @@
-// reduce
-// --------
+//> reduce
 // NOTE:
 // The reduce() method executes a reducer function for array element.
 // the value returned from the callback becomes the new value of the accumulator for the next iteration.
@@ -19,8 +18,7 @@ const total = product.reduce((accumulator, currentValue) => {
 
 console.log(`Total price: ${total}`)
 
-// Method Chaining
-// -----------------
+//> Method Chaining
 const stockedProductPrice = product.filter((f) => f.inStock === true).reduce((acc, currentProduct) => {
     return acc += currentProduct.price;
 }, 0);
