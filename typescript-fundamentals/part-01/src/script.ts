@@ -12,21 +12,21 @@ const addTwo = (a : number, b : number) : number => {
 
 console.log(addTwo(2, 32))
 
-//> Array and Tuple an readonly modifier
+//> Array
 const arr : string[] = ["chinmoy", "Tirtho"]
 const num : number[] = [123, 321, 542]
 // Alternative way of declare array:
 const age : Array<number> = [12, 32, 53, 21]
 console.log(age)
 
-//> Tuple
+//> Tuple an readonly modifier
 //- Fixed size
 //- Fixed data type for each position
 
 const dhakaLatLong: readonly [number, number] = [23.8103, 90.4125]
 const person: readonly [string, number] = ["Chinmoy", 24]
 
-//> Optional parameter
+//> Optional parameter (?:)
 //- if a parameter can be given or not
 
 const guestName = (firstName:string, lastName?:string) => {
