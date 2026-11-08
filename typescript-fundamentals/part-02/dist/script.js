@@ -9,3 +9,5 @@ import "./v3-type-vs-interface.js";
 import "./v4-special-type.js";
 import "./v5-type-assertion.js";
 import "./v6-type-narrowing.js";
+import "./v7-generic.js";
+import "./v8-promises.js";
