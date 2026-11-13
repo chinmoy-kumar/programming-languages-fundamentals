@@ -25,4 +25,5 @@ const apiUrls = {
     development: "sometext",
     staging: "sometext",
     production: "sometext",
+    // deployment: "sometext", //! this will give error
 };

@@ -52,20 +52,20 @@ const preview: productReview = {
 //>  Omit
 //- Omits only selected properties to use from a already created interface
 
-interface IEmployee{
-    id: number,
-    name:string,
-    salary: number,
-    nid: number,
+interface IEmployee {
+    id: number;
+    name: string;
+    salary: number;
+    nid: number;
 }
 
-type publicEmployee = Omit<IEmployee, "salary" | "nid">
+type publicEmployee = Omit<IEmployee, "salary" | "nid">;
 
 const directoryEntry: publicEmployee = {
     id: 23421,
     name: "Phillip",
     // salary: 2342, //! this will give error
-}
+};
 
 //> Record
 //- Record uses the existing type without creating a new interface
@@ -76,4 +76,5 @@ const apiUrls: Record<Enviroment, string> = {
     development: "sometext",
     staging: "sometext",
     production: "sometext",
-} 
+    // deployment: "sometext", //! this will give error
+};
